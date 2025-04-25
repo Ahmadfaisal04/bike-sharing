@@ -10,7 +10,7 @@ st.set_page_config(page_title="Bike Sharing Analysis", layout="wide")
 # Load data
 @st.cache_data
 def fetch_data():
-    url = 'day.csv'
+    url = 'dashboard/day.csv'
     df = pd.read_csv(url)
     return df
 
